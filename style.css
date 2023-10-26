@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.todo {
+    height: 100vh;
+    width: 100%;
+    background: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_block {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    min-height: 400px;
+}
+
+.todo_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo_form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo_field {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 0 15px;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    outline: none;
+}
+
+.todo_add {
+    margin-left: 20px;
+    height: 40px;
+    padding: 0 20px;
+    background: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background: royalblue;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.todo_error {
+    position: absolute;
+    bottom: -25px;
+    color: red;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.todo_null{
+    position: absolute;
+    bottom: -35px;
+    color: yellowgreen;
+    font-weight: 900;
+    font-family: sans-serif;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.todo_item-del,
+.todo_item-edit,
+.todo_item-star {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}
+
+.todo_item-text {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.todo_item-right,
+.todo_item-left {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.todo_remove{
+    padding: 12px 22px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
