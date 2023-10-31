@@ -6,7 +6,6 @@ let todoList = document.querySelector('.todo_list');
 let todoForm = document.querySelector('.todo_form');
 let todoField = document.querySelector('.todo_field')
 let todoError = document.querySelector('.todo_error')
-let todoRemoveAll = document.querySelector('.todo_remove');
 let todoNull = document.querySelector('.todo_null')
 
 const addItemTodoList = () => {
@@ -87,7 +86,7 @@ todoForm.addEventListener('submit', (event) => {
 
 
     if (tasks.some(el => el.text.toUpperCase() === event.target[0].value.toUpperCase())) {
-        alert("error")
+        alert("Такая задача уже есть!!")
         event.target[0].value = ''
     } else {
         tasks = [...tasks, {
